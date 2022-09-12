@@ -1,0 +1,42 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+}
+body {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    background-color:rgb(238,238,238);
+   
+    
+}
+
+
+table{
+border-collapse: collapse;
+box-shadow: 0 5px 10px #D3D3D3;
+   
+}
+thead{
+    box-shadow: 0 5px 10px #D3D3D3;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+    font-weight: 900;
+   }
+td{
+   padding: 1rem 2rem;
+}
+tr:nth-child(even){
+    background-color:	#F5DADF;
+
+}

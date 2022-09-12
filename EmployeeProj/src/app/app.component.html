@@ -1,0 +1,60 @@
+<div class="container-fluid">
+
+    <mat-toolbar color="accent"
+        style="box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);">
+        <div align="center" style="text-align: right;">
+            Employee Management System
+        </div>
+        <button class="navbar-toggler" type="button " data-toggle="collapse" data-target="navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+    </mat-toolbar>
+
+
+
+    <mat-sidenav-container class="tp-container">
+        <mat-sidenav #sidenav mode="side" opened="">
+            <div class="sidenav">
+                <div class="logo">
+                    <a href="/" class="simple-text logo-mini">
+
+
+                        <div class="logo-img">
+                            <img src="assets/angular_logo_icon_169595.png/">
+                        </div>
+                    </a>
+
+                    <a href="/" class="simple-text logo-normal">
+                        Angular Project
+
+                    </a>
+                </div>
+
+
+                <ul class="nav">
+                    <li class="active "> 
+                        <a routerLink="/default-route"><i class="fas fa-chart-link"></i> Dashboard</a>
+                    </li>
+                    <li><a routerLink="/some-route"> <i class="fas fa-random"></i> New Employee </a></li>
+                    <li><a routerLink="/some-route"> <i class="fas fa-money-check-alt"></i>Manage Records </a></li>
+                    <li><a routerLink="/some-route"> <i class="fas fa-logout"></i>Logout </a></li>
+                </ul>
+
+            </div>
+
+
+            <app-sidenav></app-sidenav>
+
+
+        </mat-sidenav>
+        <mat-sidenav-content>
+
+            <router-outlet></router-outlet>
+            <app-dashboard></app-dashboard>
+
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+
+</div>
